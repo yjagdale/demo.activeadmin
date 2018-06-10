@@ -2,23 +2,19 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="40904" started-at="2018-06-05T18:19:34Z" finished-at="2018-06-05T18:20:15Z">
+  <suite name="Default suite" duration-ms="22302" started-at="2018-06-08T19:10:42Z" finished-at="2018-06-08T19:11:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="40904" started-at="2018-06-05T18:19:34Z" finished-at="2018-06-05T18:20:15Z">
+    <test name="Default test" duration-ms="22302" started-at="2018-06-08T19:10:42Z" finished-at="2018-06-08T19:11:04Z">
       <class name="com.actvadmin.testcases.DasboardTest">
-        <test-method status="PASS" signature="beforetest()[pri:0, instance:com.actvadmin.testcases.DasboardTest@3e6fa38a]" name="beforetest" is-config="true" duration-ms="23089" started-at="2018-06-05T23:49:34Z" finished-at="2018-06-05T23:49:57Z">
+        <test-method status="PASS" signature="beforetest()[pri:0, instance:com.actvadmin.testcases.DasboardTest@26be92ad]" name="beforetest" is-config="true" duration-ms="14387" started-at="2018-06-09T00:40:42Z" finished-at="2018-06-09T00:40:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforetest -->
-        <test-method status="PASS" signature="validatelink()[pri:0, instance:com.actvadmin.testcases.DasboardTest@3e6fa38a]" name="validatelink" duration-ms="17110" started-at="2018-06-05T23:49:57Z" finished-at="2018-06-05T23:50:14Z">
+        <test-method status="PASS" signature="validatedashlink()[pri:0, instance:com.actvadmin.testcases.DasboardTest@26be92ad]" name="validatedashlink" duration-ms="7897" started-at="2018-06-09T00:40:56Z" finished-at="2018-06-09T00:41:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validatelink -->
-        <test-method status="PASS" signature="after()[pri:0, instance:com.actvadmin.testcases.DasboardTest@3e6fa38a]" name="after" is-config="true" duration-ms="685" started-at="2018-06-05T23:50:14Z" finished-at="2018-06-05T23:50:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- after -->
+        </test-method> <!-- validatedashlink -->
       </class> <!-- com.actvadmin.testcases.DasboardTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

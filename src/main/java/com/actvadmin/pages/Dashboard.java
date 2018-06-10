@@ -1,22 +1,25 @@
 package com.actvadmin.pages;
 
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 
 import com.actvadmin.browserfactory.Browser;
 
 public class Dashboard extends Browser{
 
-	//POM
-	@FindBy(linkText="Active Admin")
-	WebElement lnktext;
-	
-	public Dashboard() {
-		PageFactory.initElements(driver, this);
+	WebDriver driver;
+	public Dashboard(WebDriver driver) {
+		this.driver = driver;
 	}
-	
+
+	By linkText = By.linkText("Active Admin");
 	public void validatelink() {
-		lnktext.click();
+		driver.findElement(linkText).click();
 	}
+	
+	/*public Dashboard validatlink() {
+		return new Dashboard();
+		
+	}*/
 }
