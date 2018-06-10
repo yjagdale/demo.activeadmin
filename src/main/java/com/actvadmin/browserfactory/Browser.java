@@ -18,7 +18,8 @@ public class Browser {
 	public Browser() {
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("E:\\selenium\\demo.activeadmin\\src\\main\\java\\com\\actvadmin\\config\\config.properties");
+			FileInputStream ip = new FileInputStream(
+					"E:\\selenium\\demo.activeadmin\\src\\main\\java\\com\\actvadmin\\config\\config.properties");
 
 			prop.load(ip);
 
@@ -31,16 +32,16 @@ public class Browser {
 
 	public static void initalization() {
 		String browserName = prop.getProperty("browser");
-		
-		if(browserName.equals("chrome")) {
+
+		if (browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "E:\\selenium\\Setup\\chromedriver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-		
+
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(TestUtilies.PAGE_LOAD_TIMEOUT, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(TestUtilies.IMPL_WAIT, TimeUnit.SECONDS);
-		
+
 		driver.get(prop.getProperty("url"));
 	}
 }
